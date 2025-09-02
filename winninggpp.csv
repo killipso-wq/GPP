@@ -1,0 +1,163 @@
+Week,Position,Player,Salary,Own%,FPTS
+Week 1,QB,Josh Allen,$8000,9.3%,32.18
+,RB,Devon Achane,$6800,14.1%,23.0
+,RB,Joe Mixon,$6600,8.5%,29.8
+,WR,Josh Reynolds,$4200,0.5%,9.5
+,WR,Tyreek Hill,$8700,29.2%,29.0
+,WR,Alec Pierce,$4000,0.8%,24.5
+,TE,Juwan Johnson,$3700,0.8%,10.6
+,FLEX,Rashid Shaheed,$4400,2.4%,16.3
+,D/ST,Vikings,$3300,3.3%,22.0
+Week 2,QB,Daniel Jones,$5300,6.9%,18.32
+,RB,Alvin Kamara,$7000,4.3%,47.0
+,RB,Jordan Mason,$5200,50.1%,20.4
+,WR,Marvin Harrison Jr.,$6900,3.6%,32.0
+,WR,Chris Godwin,$6000,23.2%,27.7
+,WR,Malik Nabers,$5900,17.6%,31.7
+,TE,Trey McBride,$6000,6.6%,18.7
+,FLEX,JK Dobbins,$5400,27.5%,23.1
+,D/ST,Cardinals,$2300,5.8%,11.0
+Week 3,QB,Sam Darnold,$5500,6.4%,23.24
+,RB,Kyren Williams,$7100,2.8%,31.6
+,RB,Zach Charbonnet,$6000,21.9%,25.7
+,WR,Jauan Jennings,$4100,14.3%,49.5
+,WR,Diontae Johnson,$4900,7.3%,29.2
+,WR,Justin Jefferson,$8600,8.5%,20.1
+,TE,Dallas Goedert,$4600,5.8%,34.0
+,FLEX,Aaron Jones,$5900,3.1%,28.8
+,D/ST,Buccaneers,$3000,15.8%,2.0
+Week 4,QB,Jordan Love,$6000,2.1%,34.16
+,RB,Aaron Jones,$6400,18.9%,17.9
+,RB,Zack Moss,$5900,11.0%,17.8
+,WR,Nico Collins,$7200,35.6%,36.1
+,WR,Jayden Reed,$6000,6.7%,30.1
+,WR,Diontae Johnson,$5600,30.3%,21.3
+,TE,Tucker Kraft,$3000,2.3%,21.3
+,FLEX,Brian Robinson Jr.,$6100,23.5%,23.3
+,D/ST,49ers,$3800,3.3%,22.0
+Week 5,QB,Lamar Jackson,$7500,6.8%,37.42
+,RB,Chuba Hubbard,$6100,18.8%,18.5
+,RB,D'Andre Swift,$5700,17.9%,20.0
+,WR,Ja'Marr Chase,$8000,11.7%,44.3
+,WR,Terry McLaurin,$6100,8.9%,17.4
+,WR,Tee Higgins,$6000,8.7%,29.3
+,TE,Tucker Kraft,$3500,30.8%,24.8
+,FLEX,Darius Slayton,$3900,4.6%,29.2
+,D/ST,Broncos,$2900,35.0%,16.0
+Week 6,QB,Baker Mayfield,$6500,3.4%,31.9
+,RB,Najee Harris,$5800,6.2%,23.2
+,RB,Bucky Irving,$5400,52.8%,18.5
+,WR,Chris Godwin,$6900,9.3%,38.5
+,WR,Zay Flowers,$6500,15.8%,25.4
+,WR,Tank Dell,$6200,9.1%,18.7
+,TE,Cade Otton,$3500,18.3%,9.5
+,FLEX,Brian Robinson,$6600,31.2%,25.5
+,D/ST,Buccaneers,$2600,29.3%,17.0
+Week 7,QB,Sam Darnold,$6200,11.5%,17.26
+,RB,Kareem Hunt,$6000,13.7%,22.3
+,RB,Jahmyr Gibbs,$6900,3.0%,35.0
+,WR,Justin Jefferson,$8500,21.0%,21.4
+,WR,Amon-Ra St. Brown,$8300,8.1%,28.2
+,WR,Elijah Moore,$3200,5.5%,10.1
+,TE,David Njoku,$4100,18.5%,23.6
+,FLEX,Mecole Hardman,$3300,0.9%,12.5
+,D/ST,Bengals,$3300,6.3%,15.0
+Week 8,QB,Bo Nix,$5600,8.9%,29.76
+,RB,James Cook,$7000,2.6%,31.3
+,RB,Bijan Robinson,$7200,8.1%,22.0
+,WR,Ladd McConkey,$5100,3.3%,32.1
+,WR,Ja'Marr Chase,$8500,18.1%,20.4
+,WR,Cedric Tillman,$3300,19.7%,28.9
+,TE,Cade Otton,$3500,35.2%,29.1
+,FLEX,Chuba Hubbard,$6700,1.1%,9.1
+,D/ST,Bills,$3000,1.6%,9.0
+Week 9,QB,Sam Darnold,$6200,11.5%,17.26
+,RB,Kareem Hunt,$6000,13.7%,22.3
+,RB,Jahmyr Gibbs,$6900,3.0%,35.0
+,WR,Justin Jefferson,$8500,21.0%,21.4
+,WR,Amon-Ra St. Brown,$8300,8.1%,28.2
+,WR,Elijah Moore,$3200,5.5%,10.1
+,TE,David Njoku,$4100,18.5%,23.6
+,FLEX,Mecole Hardman,$3300,0.9%,12.5
+,D/ST,Bengals,$3300,6.3%,15.0
+Week 10,QB,Brock Purdy,$6500,16.3%,26.82
+,RB,Brian Robinson,$7700,16.7%,32.4
+,RB,Austin Ekeler,$5800,15.4%,18.1
+,WR,Calvin Ridley,$5700,3.8%,25.4
+,WR,Jauan Jennings,$5100,14.8%,16.3
+,WR,Noah Brown,$4300,8.5%,6.3
+,TE,George Kittle,$5800,19.0%,14.7
+,FLEX,James Conner,$6500,9.8%,22.3
+,D/ST,Patriots,$2500,12.2%,16.0
+Week 11,QB,Jared Goff,$6300,7.4%,37.58
+,RB,Audric Estime,$4500,9.0%,5.5
+,RB,Breece Hall,$7500,7.8%,31.1
+,WR,Amon-Ra St. Brown,$8000,8.5%,41.7
+,WR,Jameson Williams,$5800,8.7%,25.6
+,WR,Kendrick Bourne,$3100,1.3%,18.0
+,TE,Taysom Hill,$4500,3.8%,46.52
+,FLEX,De'Von Achane,$7200,36.0%,20.5
+,D/ST,Dolphins,$3000,13.2%,6.0
+Week 12,QB,Tua Tagovailoa,$5800,7.2%,31.48
+,RB,De'Von Achane,$7500,23.7%,20.6
+,RB,Bucky Irving,$5300,8.9%,27.1
+,WR,Jakobi Meyers,$5100,8.9%,25.1
+,WR,Jaylen Waddle,$5300,4.9%,31.4
+,WR,Jordan Addison,$5100,1.5%,33.2
+,TE,Trey McBride,$5600,9.6%,28.3
+,FLEX,Jahmyr Gibbs,$7300,13.5%,24.9
+,D/ST,Cardinals,$2600,3.4%,11.0
+Week 13,QB,Jayden Daniels,$7200,2.9%,28.64
+,RB,Bucky Irving,$5800,34.3%,30.5
+,RB,Brian Robinson Jr.,$6100,4.6%,20.9
+,WR,Terry McLaurin,$7100,2.3%,27.3
+,WR,Ladd McConkey,$6100,21.8%,23.7
+,WR,N. Westbrook-Ikhine,$4300,4.3%,21.1
+,TE,Pat Freiermuth,$3500,4.6%,18.8
+,FLEX,Mike Evans,$6700,17.5%,28.8
+,D/ST,Chargers,$3300,1.9%,19.0
+Week 14,QB,Josh Allen,$8000,6.2%,54.88
+,RB,Isaac Guerendo,$5400,41.0%,26.8
+,RB,Zach Charbonnet,$4800,43.3%,41.3
+,WR,Puka Nacua,$7700,7.3%,44.8
+,WR,Khalil Shakir,$5900,7.2%,24.6
+,WR,Darnell Mooney,$5500,7.0%,23.2
+,TE,Pat Freiermuth,$3800,9.3%,13.8
+,FLEX,Jordan Addison,$5300,10.9%,42.3
+,D/ST,Steelers,$3500,10.3%,10.0
+Week 15,QB,Jared Goff,$6500,4.4%,44.06
+,RB,Chase Brown,$7200,14.8%,26.3
+,RB,Rhamondre Stevenson,$5900,5.7%,9.5
+,WR,Amon-Ra St. Brown,$7600,11.0%,41.3
+,WR,Davante Adams,$6900,10.6%,45.8
+,WR,Brian Thomas,$5800,8.1%,35.5
+,TE,Brenton Strange,$2500,9.1%,18.3
+,FLEX,Sam LaPorta,$4400,7.8%,21.1
+,D/ST,Broncos,$3200,13.4%,20.0
+Week 16,QB,Michael Penix Jr.,$4500,19.1%,7.38
+,RB,Jonathan Taylor,$6900,6.0%,42.8
+,RB,Chuba Hubbard,$6800,10.4%,35.5
+,WR,Kayshon Boutte,$3500,1.4%,20.5
+,WR,J. Smith-Njigba,$6000,18.2%,24.0
+,WR,Keenan Allen,$5300,18.8%,32.1
+,TE,George Kittle,$6000,5.1%,21.6
+,FLEX,James Conner,$7100,28.9%,29.6
+,D/ST,Falcons,$3700,4.0%,25.0
+Week 17,QB,Baker Mayfield,$6900,23.0%,37.56
+,RB,Jonathan Taylor,$7900,31.1%,30.6
+,RB,Bucky Irving,$6700,44.6%,26.0
+,WR,Mike Evans,$7500,34.1%,29.7
+,WR,DeVonta Smith,$5800,5.3%,33.0
+,WR,Adam Thielen,$5700,22.8%,31.0
+,TE,Juwan Johnson,$3500,1.4%,12.6
+,FLEX,Tyler Conklin,$2900,2.3%,21.7
+,D/ST,Eagles,$3100,13.8%,19.0
+Week 18,QB,Bo Nix,$6400,7.3%,36.54
+,RB,Michael Carter,$4700,32.6%,15.9
+,RB,Brian Robinson,$8500,40.6%,34.3
+,WR,Courtland Sutton,$6400,20.5%,20.8
+,WR,Jakobi Meyers,$5700,5.5%,30.3
+,WR,Drake London,$6500,15.3%,43.7
+,TE,Zach Ertz,$4000,14.4%,15.4
+,FLEX,Marvin Mims Jr.,$4600,9.1%,22.1
+,D/ST,Broncos,$3000,19.1%,15.0

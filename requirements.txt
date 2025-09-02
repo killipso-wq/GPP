@@ -1,0 +1,6 @@
+﻿nfl-data-py==0.3.3
+pandas==1.5.3
+numpy==1.26.4
+pyarrow==21.0.0
+fastparquet==2024.11.0
+streamlit==1.36.0

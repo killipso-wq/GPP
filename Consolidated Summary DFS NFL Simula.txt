@@ -1,0 +1,175 @@
+Consolidated Summary: DFS NFL Simulator + Blitz Framework
+1. Current Setup (Your System)
+
+Data: 2022–2024 cached (weekly.parquet, snap_counts, optional NGS).
+
+Features already engineered:
+
+player_usage.parquet, team_context.parquet, defense_adjust.parquet.
+
+Defensive multipliers for YPT (pass defense), YPC (rush defense).
+
+Vegas anchoring, env_modifiers (dome/weather).
+
+Simulator (simulation_engine.py):
+
+Runs 10k Monte Carlo sims per player.
+
+Restricts to weekly players.csv (no extras).
+
+Produces p10, p25, p50, p75, p90, Boom%, mean.
+
+Supports “Miami-only” quick test.
+
+Uses DK scoring.
+
+Optimizer (GPP lineup lab):
+
+Stage 1: simulate projections → generate 150 lineups.
+
+Stage 2: analyze lineup portfolio, adjust based on leverage, ownership (RST%), stacking, game theory, then finalize 150.
+
+UI: Streamlit prototype, CSV upload.
+
+2. Blitz-Style Framework (Sections 3.2–4.3)
+
+3.2 Data Acquisition:
+
+Uses nflfastpy to download/play-by-play since 1999.
+
+Includes EPA (expected points added).
+
+3.3 Feature Engineering:
+
+Filters to pass/rush plays.
+
+Aggregates weekly offensive & defensive EPA per play.
+
+Builds Exponentially Weighted Moving Averages (EWMA) as lag features → captures momentum/recency.
+
+3.4 Logistic Regression Model:
+
+Predicts binary outcome: home team win/loss.
+
+Inputs: home_off_epa, home_def_epa, away_off_epa, away_def_epa.
+
+Baseline accuracy ~63–66% (beats 57% “always pick home” baseline).
+
+3.5 Model Evaluation:
+
+Accuracy checked on holdout season (train 1999–2019, test 2020).
+
+Coefficients: interpretable → confirm logical signs (offense positive, defense negative).
+
+4.1 From Model to Actionable Insight:
+
+Betting: convert win % → implied moneyline odds; compare to sportsbook.
+
+DFS: value isn’t just projections → must account for ownership, stacking, leverage.
+
+4.2 Optimizer Ecosystem:
+
+Most people use commercial optimizers (build lineups fast).
+
+Edge = custom projections → then feed into optimizer.
+
+Hybrid = your current setup (custom projections + your optimizer).
+
+4.3 Avenues for Improvement:
+
+Add more features (turnovers, penalties, opponent-adjusted EPA, special teams).
+
+Try advanced ML (XGBoost, LightGBM, NN).
+
+Move to player-level projections (target share, carry share, efficiency).
+
+Backtest continuously to refine knobs/settings.
+
+3. Overlap Between Your Simulator & Blitz Approach
+
+✅ Both build from team-level → player-level.
+✅ Both use opponent-adjusted efficiency (EPA vs. your defense multipliers).
+✅ Both emphasize lag/recency in features (EWMA vs. your rolling context).
+✅ Both stress leverage/game theory for DFS (ownership, stacking).
+✅ Both end with an optimizer layer.
+
+⚠️ Differences:
+
+Blitz baseline model is logistic regression (team win%) → more of a betting model.
+
+Your simulator already projects player-level distributions (more DFS-ready).
+
+Blitz uses long historical (since 1999), you’re only using 2022–2024.
+
+Blitz explicitly validates with out-of-sample testing; you haven’t fully built a backtest harness yet.
+
+4. Key Questions Raised Earlier (Consolidated)
+
+Data window: Do you want to keep it 2022–2024 (stable, modern NFL) or extend back further (adds volume but risks outdated play styles)?
+
+Validation strategy: Should we measure accuracy vs. real outcomes (weekly stats, win/loss) or benchmark vs. DFS Milly lineups?
+
+Target metric: Are we optimizing for player projection accuracy (R², MAE), or DFS portfolio outcomes (ROI, expected finish percentile)?
+
+Blending models: Should logistic regression (team-level) feed into your sim (player-level), or should you skip directly to XGBoost/LightGBM at the player level?
+
+Backtesting: Do you want a week-by-week harness (simulate → compare to reality → track error), or a “DFS winner overlap” test (did our exposures align with real winning lineups)?
+
+5. Recommendations & Path Forward
+Step 1. Build a Backtest Harness
+
+Run your simulator on 2022–2024.
+
+Compare outputs to:
+
+Actual player DK scores (projection accuracy).
+
+Milly-winning lineups (portfolio DNA overlap).
+
+Track error metrics (MAPE, correlation, exposure overlap).
+
+Step 2. Decide on Validation Benchmark
+
+If goal = better projections: validate vs. real player stats.
+
+If goal = DFS lineup ROI: validate vs. contest results.
+
+Likely best: do both (projection error + lineup overlap).
+
+Step 3. Add Team-Level EPA Layer (Blitz-Style)
+
+Incorporate rolling EPA features → adjust your team_context priors.
+
+Anchors your sim to something interpretable and historically validated.
+
+Step 4. Experiment with Advanced Models
+
+Try XGBoost/LightGBM at the player stat level.
+
+Use logistic regression as baseline (sanity check).
+
+Keep interpretability → don’t black-box everything.
+
+Step 5. Iterate Portfolio Strategy
+
+Once sims are stable:
+
+Tune leverage weight vs. raw projection.
+
+Experiment with different stack rules (QB + WR1 vs QB + WR2/TE).
+
+Anchor exposures to match winning lineup DNA.
+
+6. Big Picture
+
+You’re already ahead of Blitz because you’re at the player-level distribution stage.
+
+Blitz-style logistic regression = great team anchor layer you can fold in.
+
+Your edge will come from:
+
+Custom sim-trained player distributions (nobody else has).
+
+Game-theory optimizer rules tuned on Milly backtests.
+
+Continuous validation loop to prove sharpness before Week 1.
